@@ -185,7 +185,6 @@ export default {
   getDailyReports: {
     path: "/api/v1/consultation/{consultationId}/daily_rounds/",
   },
-
   getDailyReport: {
     path: "/api/v1/consultation/{consultationId}/daily_rounds/{id}/",
   },
@@ -274,11 +273,11 @@ export default {
   },
   getPatientNotes: {
     path: "/api/v1/patient/{patientId}/notes/",
-    method: "GET"
+    method: "GET",
   },
   addPatientNote: {
     path: "/api/v1/patient/{patientId}/notes/",
-    method: "POST"
+    method: "POST",
   },
   sampleTestList: {
     path: "/api/v1/patient/{patientId}/test_sample/",
@@ -417,6 +416,12 @@ export default {
     path: "/api/v1/patient/{id}/discharge_patient/",
     method: "POST",
   },
+
+  //location
+  getLocations: {
+    path: "/api/v1/facility/{facilityId}/asset_location/",
+  },
+
   //Profile
   getUserDetails: {
     path: "/api/v1/users/{username}/",

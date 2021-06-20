@@ -323,6 +323,11 @@ export const dischargePatient = (params: object, pathParams: object) => {
   return fireRequest("dischargePatient", [], params, pathParams);
 };
 
+// Location
+export const getLocations = (params: object, pathParam: object) => {
+  return fireRequest("getLocations", [], params, pathParam);
+};
+
 //Profile
 export const getUserDetails = (username: string) => {
   return fireRequest("getUserDetails", [], {}, { username: username });
@@ -382,7 +387,6 @@ export const getNotificationData = (pathParam: object) => {
 export const getPublicKey = () => {
   return fireRequest("getPublicKey", [], {}, {});
 };
-
 
 // FileUpload
 
